@@ -150,6 +150,10 @@ header {
   max-width: 100px;
 }
 
+.logo p {
+  margin: 0;
+}
+
 .nav {
   position: fixed;
   background: var(--clr-dark);
