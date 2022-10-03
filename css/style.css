@@ -150,6 +150,14 @@ header {
   max-width: 100px;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
+.logo a:visited {
+  color: var(--clr-dark);
+}
+
 .logo p {
   margin: 0;
 }
