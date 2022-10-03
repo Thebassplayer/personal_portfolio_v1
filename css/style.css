@@ -150,7 +150,12 @@ header {
   max-width: 100px;
 }
 
+.logo:hover {
+  transform: scale(1.05);
+}
+
 .logo a {
+  color: var(--clr-dark);
   text-decoration: none;
 }
 
@@ -209,6 +214,10 @@ header {
   z-index: 1000;
 }
 
+.nav-toggle:hover {
+  transform: scale(1.1);
+}
+
 .nav-open .nav {
   transform: translateX(0);
 }
@@ -220,12 +229,6 @@ header {
 .nav-open .hamburger {
   transform: rotate(0.625turn);
 }
-
-/* .nav-open .hamburger,
-.nav-open .hamburger::before,
-.nav-open .hamburger::after {
-  background: var(--clr-light);
-} */
 
 .nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
