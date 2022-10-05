@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Courier+Prime:wght@400;700&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -423,6 +425,9 @@ header {
 }
 
 .portfolio__img {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
@@ -493,4 +498,10 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* NOW PROYECT */
+
+h1.now {
+  font-family: "Courier Prime", monospace;
 }
