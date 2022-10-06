@@ -420,6 +420,7 @@ header {
 }
 
 .portfolio__item {
+  border: 1px solid var(--clr-dark);
   background-color: var(--clr-accent);
   overflow: hidden;
 }
