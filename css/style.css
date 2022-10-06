@@ -425,10 +425,7 @@ header {
 }
 
 .portfolio__img {
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  width: 100%;
 }
 
 .portfolio__item:focus {
@@ -440,6 +437,16 @@ header {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.75;
+}
+
+@media (min-width: 600px) {
+  .portfolio__img {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 250ms linear;
+  }
 }
 
 /* Fotter */
