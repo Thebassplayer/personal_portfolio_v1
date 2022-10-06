@@ -504,6 +504,16 @@ header {
   text-align: center;
 }
 
+.portfolio-item-links-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-item-links-container .btn {
+  margin: 0 2em;
+}
+
 /* NOW PROYECT */
 
 h1.now {
