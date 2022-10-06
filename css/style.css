@@ -500,8 +500,14 @@ header {
   margin-right: auto;
 }
 
+.portfolio-item-individual p:first-child {
+  text-align: center;
+}
+
 /* NOW PROYECT */
 
 h1.now {
   font-family: "Courier Prime", monospace;
 }
+
+/* Personal Speaker */
