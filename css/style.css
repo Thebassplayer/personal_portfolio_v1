@@ -561,3 +561,9 @@ h1.personal-speaker {
   font-family: "Lato", sans-serif;
   letter-spacing: 0.15em;
 }
+
+/* Speed Typre */
+
+h1.speed-typer {
+  letter-spacing: 0.1em;
+}
