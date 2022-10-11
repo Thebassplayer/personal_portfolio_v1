@@ -329,6 +329,11 @@ header {
   h1.personal-speaker {
     font-size: 2.45em;
   }
+
+  h1 span.personal-speaker {
+    display: block;
+    text-align: end;
+  }
 }
 
 /* My services section */
@@ -553,5 +558,6 @@ h1.expense-tracker {
 /* Personal Speaker */
 
 h1.personal-speaker {
-  font-family: "Silkscreen", cursive;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.15em;
 }
