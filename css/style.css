@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Courier+Prime:wght@400;700&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Courier+Prime:wght@400;700&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap&family=Lato:wght@900&display=swap");
 
 *,
 *::before,
@@ -107,6 +107,10 @@ h2 {
 }
 h3 {
   font-size: var(--fs-h3);
+}
+
+h1.portfolio-item {
+  align-self: end;
 }
 
 .section__title {
@@ -312,6 +316,12 @@ header {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+  }
+
+  /* Expense Tracker */
+
+  h1.expense-tracker {
+    font-size: 2.45em;
   }
 }
 
@@ -526,6 +536,12 @@ header {
 
 h1.now {
   font-family: "Courier Prime", monospace;
+}
+
+/* Expense Tracker */
+
+h1.expense-tracker {
+  font-family: "Lato", sans-serif;
 }
 
 /* Personal Speaker */
