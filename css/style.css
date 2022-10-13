@@ -290,9 +290,9 @@ header {
   transform: translateX(0);
 }
 
-.nav-open .nav-toggle {
+/* .nav-open .nav-toggle {
   position: fixed;
-}
+} */
 
 .nav-open .hamburger {
   transform: rotate(0.625turn);
