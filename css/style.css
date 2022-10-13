@@ -186,6 +186,7 @@ header {
 
 .interactive-btns-container {
   display: flex;
+  align-items: center;
 }
 
 .dark-mode-toggle {
@@ -196,7 +197,7 @@ header {
   color: var(--clr-accent);
   border: none;
   padding: 0.1em;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
   background: transparent;
   cursor: pointer;
   /* border-radius: 5px; */
@@ -217,7 +218,7 @@ header {
 .hamburger::before,
 .hamburger::after {
   background: var(--clr-accent);
-  width: 2em;
+  width: 30px;
   height: 3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
@@ -276,7 +277,7 @@ header {
 }
 
 .nav-toggle {
-  padding: 0.1em;
+  padding: 5px;
   background: transparent;
   border: 0;
   cursor: pointer;
