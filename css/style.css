@@ -19,6 +19,9 @@
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
 
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -30,7 +33,7 @@
 
 .darkmode {
   --clr-light: #fdffc4;
-  --clr-dark: #00332a;
+  --clr-dark: #303030;
   --clr-primary: #202302;
   --clr-secondary: #00100d;
   --clr-accent: #ff7750;
@@ -55,8 +58,8 @@ html {
 }
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--background);
+  color: var(--foreground);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -172,12 +175,12 @@ header {
 }
 
 .logo a {
-  color: var(--clr-dark);
+  color: var(--foreground);
   text-decoration: none;
 }
 
 .logo a:visited {
-  color: var(--clr-dark);
+  color: var(--foreground);
 }
 
 .logo p {
@@ -196,8 +199,8 @@ header {
   right: 1em; */
   color: var(--clr-accent);
   border: none;
-  padding: 0.1em;
-  margin: 0 10px 0 0;
+  padding: 2px;
+  margin: 0 15px 0 0;
   background: transparent;
   cursor: pointer;
   /* border-radius: 5px; */
