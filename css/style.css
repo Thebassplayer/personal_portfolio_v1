@@ -277,7 +277,7 @@ header {
 }
 
 .nav-toggle {
-  padding: 5px;
+  padding: 10px 5px;
   background: transparent;
   border: 0;
   cursor: pointer;
