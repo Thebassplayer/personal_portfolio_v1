@@ -7,9 +7,6 @@ const setValue = (key, value) => {
 const getValue = (key) => {
   return JSON.parse(ls.getItem(key));
 };
-const empty = () => {
-  ls.clear();
-};
 let darkMode = getValue("darkMode");
 
 const enableDarkMode = () => {
