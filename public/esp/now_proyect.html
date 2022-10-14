@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Lopez Portfolio Website</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scrypt -->
+    <script src='./js/script.js' defer></script>
+    <script src='./js/darkmode.js' defer></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <p><strong>&#60;RoyLopezDev&#62;</strong>
+                </p>
+            </a>
+        </div>
+
+
+        <div class="interactive-btns-container">
+
+            <!-- darkmode button -->
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                    <path fill="currentColor"
+                        d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                        transform="translate(-8 -8)" />
+                </svg>
+            </button>
+
+            <!-- Hamburger btn -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+        </div>
+
+        <!-- Nav menu -->
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a
+                        href="https://drive.google.com/file/d/1vZW-yuxCYOLGuGtKfrYpBV1DAWsVIwI1/view?usp=sharing"
+                        class="nav__link">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro portfolio-item now">
+            NOW PROJECT</h1>
+        <p class="section__subtitle section__subtitle--intro">Know where you are</p>
+        <img src="img/now_proyect/now_proyect_phone.jpeg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>
+            <strong>Front-end and back-end design and development using Node.js, Express.js & NeDB.</strong>
+        </p>
+        <img src="img/now_proyect/Laptop_Mockup_Now_Proyect.png" alt="">
+        <p>Now Project is a Web app that gives you information about your location in real time, allowing you to save
+            it, add
+            photograps and request information from previous locations.</p>
+
+        <p>Now make requests to 2 different web APIs. Leaflet api to render the map and openweathermap api to get
+            weather info.
+            Also uses browser location api to get your geolocation.
+        </p>
+        <p>In this proyect I implemented Express.js to create a web server and NeDB to save your previous location on a
+            database.
+        </p>
+    </div>
+
+    <div class="portfolio-item-links-container">
+        <a href="https://now-project-v-1-1-2.herokuapp.com/" class="btn">Link</a>
+        <a href="https://github.com/Thebassplayer/now_project" class="btn">&lt;&gt;Code</a>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:roylopezdev@gmail.com" class="footer__link">roylopezdev@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io/thebassplayer">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/RoyLopezJS">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Thebassplayer">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/roylopezdev/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
