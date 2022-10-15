@@ -193,17 +193,12 @@ header {
 }
 
 .dark-mode-toggle {
-  /* position: absolute; */
-  /* z-index: 100; */
-  /* top: 1em;
-  right: 1em; */
   color: var(--clr-accent);
   border: none;
   padding: 2px;
   margin: 0 15px 0 0;
   background: transparent;
   cursor: pointer;
-  /* border-radius: 5px; */
   width: 25px;
   height: 25px;
 }
