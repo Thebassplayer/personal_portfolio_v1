@@ -1,4 +1,3 @@
-portfolio_item.html
 .DS_Store
 node_modules
-.vscode
+dist
