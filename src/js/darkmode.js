@@ -4,7 +4,7 @@ const ls = window.localStorage;
 const setValue = (key, value) => {
   ls.setItem(key, JSON.stringify(value));
 };
-const getValue = (key) => {
+const getValue = key => {
   return JSON.parse(ls.getItem(key));
 };
 let darkMode = getValue("darkMode");
