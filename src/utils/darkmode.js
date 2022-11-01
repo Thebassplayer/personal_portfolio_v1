@@ -37,16 +37,16 @@ export const darkModeHandler = buttonID => {
 
   // Event listener
 
-  const darkModeToggle = darkModeToggleBtn.addEventListener("click", () => {
-    if (darkMode) {
-      disableDarkMode();
-    } else {
-      enableDarkMode();
-    }
-    darkMode = getValue("darkMode");
-  });
-
   return {
-    darkModeToggle,
+    darkModeToggle() {
+      darkModeToggleBtn.addEventListener("click", () => {
+        if (darkMode) {
+          disableDarkMode();
+        } else {
+          enableDarkMode();
+        }
+        darkMode = getValue("darkMode");
+      });
+    },
   };
 };
