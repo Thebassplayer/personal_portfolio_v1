@@ -1,35 +1,52 @@
-const darkModeToggle = document.getElementById("dark-mode-toggle");
+import { storage } from "./storage";
 
-const ls = window.localStorage;
-const setValue = (key, value) => {
-  ls.setItem(key, JSON.stringify(value));
-};
-const getValue = key => {
-  return JSON.parse(ls.getItem(key));
-};
-let darkMode = getValue("darkMode");
+// Local storage
+const ls = storage("local");
 
-const enableDarkMode = () => {
-  document.body.classList.add("darkmode");
-  setValue("darkMode", true);
-};
+// Dark Mode Button
 
-const disableDarkMode = () => {
-  document.body.classList.remove("darkmode");
-  setValue("darkMode", false);
-};
+// const ls = window.localStorage;
 
-if (darkMode) {
-  enableDarkMode();
-}
+// const setValue = (key, value) => {
+//   ls.setItem(key, JSON.stringify(value));
+// };
+// const getValue = key => {
+//   return JSON.parse(ls.getItem(key));
+// };
 
-// Event listener
+// Dark mode functionality
 
-darkModeToggle.addEventListener("click", () => {
+export const darkModeHandler = buttonID => {
+  const darkModeToggleBtn = document.getElementById(`"${buttonID}"`);
+
+  const darkMode = ls.get("darkMode");
+
   if (darkMode) {
-    disableDarkMode();
-  } else {
     enableDarkMode();
   }
-  darkMode = getValue("darkMode");
-});
+
+  const enableDarkMode = () => {
+    document.body.classList.add("darkmode");
+    ls.set("darkMode", true);
+  };
+
+  const disableDarkMode = () => {
+    document.body.classList.remove("darkmode");
+    ls.set("darkMode", false);
+  };
+
+  // Event listener
+
+  const darkModeToggle = darkModeToggleBtn.addEventListener("click", () => {
+    if (darkMode) {
+      disableDarkMode();
+    } else {
+      enableDarkMode();
+    }
+    darkMode = getValue("darkMode");
+  });
+
+  return {
+    darkModeToggle,
+  };
+};
