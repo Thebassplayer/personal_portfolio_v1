@@ -1,4 +1,5 @@
 import { darkModeHandler } from "./utils/darkmode";
+import "./style/style.css";
 
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
